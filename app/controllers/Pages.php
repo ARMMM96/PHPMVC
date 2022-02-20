@@ -4,7 +4,9 @@ class Pages  extends Controller {
     public function __construct() {
     }
     public function index() {
-        $data = ['title' => 'Welcome To HOME PAGE'];
+        $data = [
+            'title' => 'Welcome To HOME PAGE',
+        ];
         $this->view('pages/index', $data);
     }
     public function about() {
